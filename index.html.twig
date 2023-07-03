@@ -1,0 +1,251 @@
+{% use '_blocks.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html lang="fr" style="background:#202124;"> 
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		{# <?php include 'hb_card_tp.php'; ?> #}
+		{{ block('head_brand') }}
+	</head>
+ 
+	<body>
+		{{ block('gtm') }} 
+		{{ block('header') }}      
+		<!-- IMAGES ONLY HERE -->
+		<div class="swiper scene fixed w-full bg-center bg-cover"> 
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div id="swiper-slide-00" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-full md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}0{%endif%}</p></div>
+				<div id="swiper-slide-01" class="swiper-slide bg-center bg-cover relative">
+					<div class=" hiddengradient absolute w-full h-full md:h-1/2 bottom-0"></div>
+					{# <p style="font-size:96px; color:red;">{%if debugSlider %}1{%endif%}</p> #}
+					{{ block('animation_walk') }}
+				</div>
+				<div id="swiper-slide-02" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}2{%endif%}</p></div>
+				<div id="swiper-slide-03" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}3{%endif%}</p></div>
+				<div id="swiper-slide-04" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}4{%endif%}</p></div>
+				<div id="swiper-slide-05" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
+				<div id="swiper-slide-06" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
+				<div id="swiper-slide-07" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
+				<div id="swiper-slide-08" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
+				<div id="swiper-slide-09" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
+				<div id="swiper-slide-10" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
+				<div id="swiper-slide-11" class="swiper-slide bg-center bg-cover relative" style="background:#202124;"><div class="gradient absolute w-full h-1/2 bottom-0"></div><h1 style="font-size:96px; color:red;">{%if debugSlider %}footer{%endif%}</h1></div>
+			</div>
+		</div>
+		
+		<div class="container max-w-screen-2xl px-4 relative z-10">
+			
+
+			<section class="section0 container intro max-w-6xl bg-transparent overflow-auto relative">
+				<div class="text-center container textbox w-full md:w-2/3 absolute left-0 md:left-1/2 -translate-x-0 md:-translate-x-1/2 md:bottom-1/2 md:translate-y-2/4 bottom-4 translate-y-0">
+					<h1 class="text-white <!--text-3xl md:text-6xl--> mb-3 md:mb-6" style="font-size:5vw; line-height:1;">
+						J’ai infiltré un forum cannibale
+					</h1>
+					<!-- <p class="font-light text-white text-lg md:text-xl opacity-80">Demandez le programme! Voici ce qui attend nos stars</p> -->
+					<p class="text-white text-l md:text-xl  mb-2 md:mb-4 opacity-70">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam labore vero adipisci praesentium voluptatibus veritatis, doloribus corrupti voluptas. Sunt cum commodi eveniet mollitia dolor amet facilis dicta quam animi placeat.
+					</p>
+					<!-- {{ block('scroller') }} -->
+				</div> 
+				<div id="trigger0" class="trigger absolute top-8 w-full h-1"></div>
+			</section>      
+			
+			<section class="section1 container max-w-6xl overflow-auto relative">
+				<div class="textbox w-full md:w-1/2 p-0 md:p-4">
+					{# <p class="font-bold md:text-left text-2xl md:text-5xl text-white">Marco Odermatt</p>
+					<div class="grid grid-cols-1 py-4">
+						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Chance de médaille</span>
+						<span class="text-white block overflow-auto">
+							<span class="float-left mr-2 opacity-70">Combiné alpin le 7 février</span>
+							<img src="img/star1.svg" alt="Icône 1 étoile1" class="translate-y-1.5">
+						</span>
+						<span class="text-white block overflow-auto">
+							<span class="float-left mr-2 opacity-70">Super-G le 9 février</span>
+							<img src="img/star5.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
+						</span>
+						<span class="text-white block overflow-auto">
+							<span class="float-left mr-2 opacity-70">Descente le 12 février</span>
+							<img src="img/star4.svg" alt="Icône 4 étoiles" class="translate-y-1.5">
+						</span>
+						<span class="text-white block overflow-auto">
+							<span class="float-left mr-2 opacity-70">Géant le 17 février</span>
+							<img src="img/star5.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
+						</span>
+					</div> #}
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						Otto789* a 65 ans. Vous pourriez le croiser le matin, dans le bus, au pub, le mercredi, ou le dimanche à l’église. Surtout si vous habitez à Brême, dans le nord de l’Allemagne, comme lui.
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Sur sa photo de profil, un portrait au crayon d’un chef. Moustache touffue, lunettes rondes et toque blanche. Mais lui ne rêve pas de servir le soufflé parfait dans un restaurant étoilé. Non, Otto789 aimerait plutôt manger une femme pendant qu’elle vit encore, à commencer par le haut de ses bras ou ses joues, et après s’être enquis de ses désirs à elle. Une fois repu, il la bouchoyerait, en ferait des saucisses, qu’il congèlerait et consommerait des mois durant. Enfin, si tout cela était légal, précise-t-il quand même. 
+					</p>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						SubMary4Use*, elle, souhaiterait être guillotinée avant d’être bouffée. Et, si possible, elle se taperait bien un orgasme à l’instant où la lame s’insère avec fracs entre ses cervicales. Jul4kinkyfun* voudrait se faire éventrer, mais pas mourir tout de suite. CutterGirl* n’est «ni folle ni suicidaire, juste intensément et fièrement soumise. [Se laisser engloutir] serait le cadeau ultime fait à [son] propriétaire et le plus incroyable acte de soumission».
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Bienvenue sur le forum DolcettGirls: un salon de discussions virtuel pour cannibales, que j’ai infiltré. Ici, on aime bander en lisant des histoires trashs et morbides, en imaginant être un boucher ou une entrecôte parisienne. On s’y échange des bons plans pour mater des pornos thématiques, on y publie des photomontages (parfois très (trop?) réalistes) et des dessins de femmes rôties, une pomme dans la bouche. Et on cherche des convives et du gibier humain pour une partie de chasse suivie d’un cocktail dinatoire. Mais est toujours sexuel.
+					</p>
+					<span class="w-full block bg-gray-100 mb-custom-p">
+						<b>popup style message avec medaillon portrait</b>
+						«Il existe plusieurs formes de cannibalisme. Celui de survie, si l’on pense à une partie de cette équipe de rugby qui a survécu 72 jours dans les Andes en mangeant les camarades décédés après un crash d’avion. Il y a celui du rituel, dans les tribus ou les sociétés ancestrales. Et puis, il y a le fantasme cannibale, dans sa dimension sexuelle: la voraréphilie. Une variante orale du sadomasochisme.»
+					</span>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Dans ce lieu dédié au fantasme, la frontière avec la réalité est parfois aussi fine et floue qu’une feuille de riz. Les modératrices et modérateurs interviennent d’ailleurs souvent. Par exemple, lorsque Julie34* dit chercher un charcutier, pour de vrai. Ou quand CannibalEvil* raconte que sa copine a tué pour lui, qu’une autre fille s’est suicidée pour lui, et qu’il kiffe ça. La chat room, où on conversait en direct, a été fermée. Il en va de la survie du forum.
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Perro Loco — pseudo du «maire» et fondateur de la petite ville imaginaire de Dolcett, un dessinateur canadien — en sait quelque chose. Similaire, son précédent site avait dû être fermé au début des années 2000. C’est sur son Cannibal Cafe Forum que l’informaticien Arwin Meiwes («le cannibale de Rotenburg») avait recruté sa victime consentante, Bernd Brandes, en 2001, comme le rappellent le magazine français «NEON» et le site américain «Vice».
+					</p>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						La suite? Après avoir eu un rapport sexuel, les deux hommes décident ensemble de trancher le pénis de Bernd Brandes, de le cuisiner, et de le déguster. Trois heures plus tard, toujours avec l’accord de son invité en pleine agonie, Arwin Meiwes le poignarde à la gorge, avant de l’étriper et de garder les meilleurs morceaux au congélateur, pour les consommer plus tard. 
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Plus d’un an plus tard, il part à nouveau à la recherche d’un partenaire sur la Toile. Mais finit par être arrêté. En deuxième instance, il est condamné à la prison à vie, en mai 2006, pour meurtre et atteinte à la paix des morts. En prison, il est devenu végétarien par souci pour l’écologie, raconte le «Daily Mail».
+					</p>
+					<span class="w-full block bg-gray-100 mb-custom-p">
+						<b>popup style message avec medaillon portrait</b>
+						«En Suisse, le principe est la libre disposition de son corps. C’est la raison pour laquelle on doit donner son consentement avant une opération chirurgicale, par exemple. Mais peut-on consentir à être mangé? Pas facile comme question. Sur le plan pénal, un juge pourrait avoir tendance à exclure un consentement libre et éclairé pour contourner la complexité, notamment sous l'angle de la dignité humaine. Cas échéant, si la personne mutilée restait en vie, l’auteur serait poursuivi pour lésions corporelles graves. En cas de décès de la victime, pour homicide. Et si des actes devaient être commis sur elle après sa mort, on retiendrait l’atteinte à la paix des morts.»
+					</span>
+					<p class="text-white text-l md:text-2xl mb-4">
+						A chaque fait divers cannibale, nos sociétés sont aussi horrifiées que fascinées. Netflix l’a bien compris. «Don’t F**k with Cats», qui traque le criminel canadien Luka Rocco Magnotta («le dépeceur de Montréal») a été l’un des documentaires les plus regardés sur la plateforme de streaming en 2019. 
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						En 2022, «Dahmer», fiction basée sur la vie du tueur en série étasunien Jeffrey Dahmer («le cannibale de Milwaukee»), a été visionnée pendant plus d’un milliard d’heures. «Tudum!» Seules la saison 4 de «Stranger Things» et la première de «Squid Game» avaient réussi cet exploit avant.
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						L’appétit du grand écran pour les pulsions anthropophages existe depuis longtemps. Dernière sortie en date: «Bones and All», avec Timothée Chalamet, a valu un lion d’argent à Luca Guadagnino, son réalisateur, et le prix du meilleur espoir à Taylor Russell, lors de la prestigieuse Mostra de Venise en 2022. 
+					</p>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						Ironie du sort, Luca Guadignino est aussi l’auteur de «Call Me by Your Name» (2017), avec Timothée Chalamet et Armie Hammer, qui a été accusé de viol et de penchants cannibales et vampiriques par plusieurs ex-compagnes début 2021. Allégations que le trentenaire a toujours niées. 
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						L’actu, la pop culture: autant d’engrais pour cultiver le jardin secret de milliers (millions?) de personnes, où les jambons humains poussent comme du maïs Monsanto, et faire vivre le forum Dolcett Girls. Le plus populaire du genre: il compte désormais quelque 60’000 membres.
+					</p>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						Pour s’inscrire, il suffit d’inventer un alias et un mot de passe. Et d’attendre. Dans les 24 heures, on m’ouvrait les portes d’un monde nouveau, où il y a deux règles principales: pas d’histoires impliquant des mineurs et rester dans le fantasme. 
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Ici, un mème (blagueur?) présente une photo d’un homme et d’une femme adeptes de musculation accolées à une image de deux hamburgers, avec, pour titre, le hashtag #couplegoals («objectifs de couple», en français). Là, Reader2020* déclare son amour pour les activistes de PETA, organisation de défense des animaux, qui ont l’habitude de se mettre en scène dans des barquettes ensanglantées ou de se déguiser en lapin. 
+					</p>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						Plus loin, des femmes remplissent des formulaires et postulent pour devenir du «bétail», en joignant une photo dénudée. Tiffany Melzer*, 25 ans, 55 kg, a «toujours rêvé de se faire embrocher à travers mon cul et ma chatte et d’être rôtie au-dessus d’un feu de bois». 
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Les rôles sont clairs: sauf exception, les hommes manient le couteau et le barbecue, les femmes sont leurs pièces de bidoche. Littéralement, des «femmes-viande» («meatgirl», en anglais). 
+					</p>
+					<span class="w-full block bg-gray-100">
+						<b>popup style message avec medaillon portrait</b>
+						«Il est difficile de définir l’origine d’un fantasme. Elle est différente pour chaque personne. Tout dépend de ce qu’il y a dans la dimension secrète de celles et ceux que la mort excite. Mais, en un sens, le fantasme cannibale nous habite toutes et tous. Il vient peut-être du stade oral, de l’enfance, et de l’allaitement. Prenez le fait d’aimer mordiller lors d’une relation sexuelle: c’est une forme de cannibalisme soft. N’avez-vous jamais eu envie de mordre quelqu’un ou quelque chose tellement vous l’aimiez?»
+					</span>
+					<span class="w-full block bg-gray-100">
+						<b>popup style message avec medaillon portrait</b>
+						«C’est aussi le cas lorsque quelqu’un avale les fluides de l’autre lors d’une relation sexuelle. Dans la langue française, on dit d’ailleurs vouloir dévorer ou croquer ce que l’on aime, ce que l’on trouve beau.»
+					</span>
+					<span class="w-full block bg-gray-100 mb-custom-p">
+						<b>popup style message avec medaillon portrait</b>
+						«En psychanalyse, on parle d’introjection. Dans une relation amoureuse, on incorpore en soi une partie de l’être aimé. C’est pour ça que l’on s’empoisonne dans le processus de deuil après une rupture: l’objet d’amour perdu, que nous avons symboliquement ingéré, se retourne contre nous. En somme, une personne qui en mange une autre pour de vrai fait ce que nous faisons toutes et tous psychiquement et inconsciemment. Manger quelqu’un, c’est le posséder complètement.»
+					</span>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						Y a-t-il des Suissesses et des Suisses dans la salle? Je tente ma chance. J’ouvre une discussion publique, en anglais. «Bonjour tout le monde!!! Je me demandais s’il y avait des Suisses parmi vous? Je me sens seul parfois par ici [emoji rieur].» Une première réponse, insatisfaisante, fuse: «Ce serait plutôt improbable que tu sois le seul en Suisse. Mais dans un monde fantasmé, en quoi le lieu d’habitation est-il important?» Touché.
+					</p>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						Au fil de mes pérégrinations, je tombe sur un jeu, créé par un utilisateur. Gratuitement, je télécharge son application. Le pitch est simple: Roslynd, une hôtesse, me souhaite la bienvenue dans le très exclusif (fictif) Kitchen Club. Ce soir, je suis au fourneau. Je peux choisir quelle femme je souhaite mitonner. Les avatars ressemblent à ceux d’un jeu vidéo. Il y a une rousse, une Asiatique, une Noire, une deuxième rousse et une blonde aux cheveux courts. Allez, c’est la seconde rouquine qui passera à la casserole. Clic. Des images me transportent d’une étape de la préparation du souper à la suivante. Roslynd est «excitée» de voir sa congénère en train de rôtir comme un cochon de lait au-dessus d’un foyer affamé. 
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Après quelques jours, ça mord à mon hameçon. Ma publication a été vue 44 fois. Je reçois deux messages privés. Je vais enfin pouvoir poser des question à des compatriotes. SmilingVilain* est le premier à s’être annoncé. En anglais d’abord, la conversation se poursuivra en français, sur plusieurs jours. Mon interlocuteur est méfiant. 
+					</p>
+					<span class="w-full block bg-gray-100">
+						<b>popup style message sans médaillon portrait</b>
+						- Bonjour, je viens de lire ton post. Qui es-tu?<br>
+						- Salut, je ne suis pas sûr de comprendre ta question. Je suis un mec suisse, de la partie francophone. Tu vis aussi en Suisse? Qu’est-ce qui te plait sur ce forum?<br>
+						- Bonjour, merci pour ta réponse. Oui, on est dans le même pays ;-). Je ne viens pas très souvent sur ce forum, mais il y a des fois des images et des sujets appétissants. Et des gens intéressants…<br>
+						- Hey, cool! Intéressant. T’es aussi en Suisse romande? C’est quoi qui te fait kiffer par ici? Ton fantasme, c’est de manger ou d’être mangé?<br>
+						- Bonsoir, non, non, je suis en Suisse, mais pas dans la partie romande. Mon fantasme, c’est le «mangeur de femmes». Mais je viens de découvrir que l’autre côté du «jeu» m’excite aussi… J’ai des fantasmes dans cette direction depuis toujours. Et toi?<br>
+						- Ciao, très franchement, je découvre un peu ce monde, ça titille ma curiosité. Pour toi, tout ça, c’est un jeu de rôles?
+						- Salut, je trouve surtout super qu’on trouve des personnes pour en parler sur le web. Dans le monde réel, j’ai l’impression que c’est difficile de trouver quelqu’un(e)...<br>
+						- Ciao, oui, en effet, je pense que ça doit être compliqué de trouver des gens avec le même fantasme dans la «vraie vie». - T’as déjà rencontré des gens après avoir discuté ici? Ce serait quoi le but d’une rencontre, pour toi? Si c’était légal, tu réaliserais ton fantasme?<br>
+						- Salut, oui, absolument, c’est quand même rare. Et non, je n’ai rencontré personne… Toi? [Et si c’était légal…] Hmmmm, probablement [que je le ferais]…  Quels sont tes fantasmes?<br>
+						- Ciao, merci pour ton message intéressant. En fait, pour être tout à fait honnête, je n’ai pas de fantasme en ce sens. - J’explore un peu. Je suis journaliste et j’essaie d’en savoir un peu plus, de comprendre. Est-ce que tu serais prêt à témoigner de manière anonyme ou qu’on se rencontre pour en causer? Cheers!<br>
+						- J’aurais juré… Malheureusement, je ne suis pas la bonne personne, je ne peux pas t’en dire plus. Et je compte sur toi, on n’a jamais «parlé».
+					</span>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						Mon deuxième échange, après avoir commencé en suisse allemand, c’est vite terminé. «Il y a des gens de Suisse ici, mais ils ne bavardent pas trop, m’écrit Quickstep21*. Souvent, les gens ne vont pas te répondre si ton profil ne mentionne pas ton âge et ton sexe.»
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Combien de personne dans le monde sont-elles concernées par cette paraphilie (mot aujourd’hui préféré à «déviance» ou «perversion» pour désigner une anomalie du fonctionnement sexuel)? Tous les spécialistes du monde médicopsychiatrique que j’ai consultés s’accordent: la voraréphilie est extrêmement rare. La littérature scientifique est quasi inexistante — il existe quelques études de cas anglo-saxonnes, qui ne permettent pas de faire des généralités. 
+					</p>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						Quelques chiffres permettent de souligner la marginalité de ces désirs. Le forum DolcettGirls accueillent 60’000 membres alors que (presque) n’importe qui dans le monde peut y avoir accès. 
+
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Autre élément de réponse: les performances du porno «cannibale» sur des sites populaires comme Xvideos ou Pornhub. Les productions estampillées «Delish Media» ne dépassent jamais les 600’000 vues et en engendrent plus généralement entre 10’000 et 100’000. Une bagatelle par rapport aux dizaines (voire centaines) de millions de coups de souris générés par les films les plus regardés sur ces plateformes, qui sont visitées des milliards de fois par an (2,5 milliards pour Pornhub en 2022). 
+					</p>
+					<span class="w-full block bg-gray-100">
+						<b>popup style message avec médaillon portrait</b>
+						«Il me semble évident que l’immense majorité des gens qui ont ce fétiche ne passeront jamais à l’acte. Comme pour beaucoup d’autres fantasmes, on ne souhaite pas forcément qu’ils se réalisent. Pour passer à l’acte, il faudrait un manque d’empathie ou la capacité et l’envie de transgresser. Ça ne fait pas pour autant de ces personnes des psychopathes. Dans la société, il y a des psychopathes qui s’ignorent qui ne passent jamais à l’acte et d’autres qui ne le sont pas et qui succombent à leurs envies. Mais, encore une fois, avoir un fétiche ne veut pas dire franchir le pas. Environ 70% des gens qui ont des fantasmes pédophiles ne passent jamais à l’acte, par exemple.»
+					</span>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						Autrice d’un livre sur les fétichismes touchant de près ou de loin à la mort, l’américaine Victoria Hartmann rejoint la sexologue romande. «J’ai mené une étude sur les nécrophiles, dont la voraréphilie est une sous-catégorie: seul un demi pour cent de mon échantillon d’environ 1000 personnes a répondu avoir réalisé son fantasme, se souvient la sexologue, titulaire de deux doctorats, jointe via Zoom. En d’autres termes, elles avaient eu un rapport avec une personne décédée. Cette statistique indicative ne permet cependant pas de généraliser.»
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Perro Loco y va aussi de son estimation. Selon le grand manitou de DolcettGirls, environ une femme sur mille au sein de la communauté est vraiment prête à «aller jusqu’au bout». Sur le forum, bon nombre d’utilisatrices et d’utilisateurs déclarent d’ailleurs ouvertement être incapables de tuer et de manger un autre être humain.
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Victoria Hartmann, également directrice de l’Erotic Heritage Museum de Las Vegas, différencie celles et ceux qui sont en proie à une paraphilie violente de celles et ceux qui sont dans l’imaginaire. «Les fétichistes purs ne franchissent jamais la limite. Ils explorent leurs fantasmes sur internet ou avec des partenaires consentants, dans le cadre d’une relation sado-masochiste négociée à l’avance et codifiée.»
+					</p>
+					<p class="text-white text-l md:text-2xl mb-custom-p">
+						En clair, il s’agit de jeux de rôle où le «boucher» va, par exemple, ficeler son amante comme un rôti, l’enduire de sauce brune et lui mettre une pomme entre les dents. «Les personnes qui trouvent des partenaires ou s’épanouissent sur internet ont tendance à moins avoir peur d’elles-mêmes, à se sentir mieux psychologiquement et à moins pratiquer, constate l’Allemande d’origine. Elles se distinguent clairement des tueurs, qui sont généralement atteints d’un trouble de la personnalité du groupe B (ndlr: dont la psychopathie fait partie).»
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						L’immense majorité sont donc inoffensifs. «Mais je comprends les craintes, confie la chercheuse. Dahmer ou Magnotta avaient aussi l’air normaux. Celles et ceux que je connais en ont marre d’être comparés à des criminels. Résultat, les portes de leur communauté se ferment toujours plus.» Aucun de ses contacts n’a d’ailleurs accepté de prendre le «risque» de bavarder avec moi.
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						Vous êtes rassurés? Retrouvons Otto789*. «De temps en temps, je tombe sur une vraie meatgirl, qui me dit avoir trouvé un boucher et qui souhaite mourir. Puis, elle disparaît.» GirlCooker abonde: «Oui… Elles soutiennent souvent avoir trouvé et arrêtent ensuite de publier ici pour une quelconque raison.» Alors, réalité glaçante ou illusion jouissive?
+					</p>
+					<p class="text-white text-l md:text-2xl mb-4">
+						*Tous les pseudonymes et les noms des membres du forum DolcettGirls ont été changés.
+					</p>
+					<!-- <p class="text-white text-xs opacity-70">Legende de la photo/crédit</p> -->
+				</div>
+				<div id="trigger1" class="trigger absolute top-8 w-full h-1"></div>
+			</section>      
+			
+			<section class="section10 container py-8 max-w-6xl overflow-auto relative">
+				<div class="textbox w-80 absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
+					{{ block('credits') }}  
+				</div>
+				<div id="trigger10" class="trigger absolute top-8 w-full h-1"></div>
+			</section> 
+			
+			
+			<script src="js/vendor/modernizr-3.11.2.min.js"></script> 
+			<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+			<script src="js/ScrollMagic.min.js"></script>
+			<script src="js/debug.addIndicators.min.js"></script>
+			<!-- <script src="js/isInViewport.min.js"></script> -->
+			<script src="js/main.js"></script>
+			<script src="js/animations.js"></script>
+			<script src="js/headroom.min.js"></script>
+			<script src="https://cdn.tailwindcss.com"></script>
+
+			
+			<!-- <script>
+				window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+				ga('create', 'G-BVVLW3LSNH', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+			</script>
+			<script src="https://www.google-analytics.com/analytics.js" async></script> -->
+			
+		</div>  
+		
+	</body>
+</html>
