@@ -1,9 +1,9 @@
 {
-	"title": "Qui sont les skieurs suisses qui ramèneront une médaille?",
-	"description": "Demandez le programme! Voici ce qui attend nos stars",
+	"title": "Les 10 concerts les plus incroyables de l'histoire de Paléo",
+	"description": "Le plus grand festival de Suisse romande s’apprête à ouvrir sa 46e édition ce mardi. Blick vous propose un retour en arrière dans l’oeil des maestros du festival.",
 	"authors": {
-		"photos": "AFP/Keystone",
-		"writer": "Ugo Curty",
+		"photos": "Paléo Festival (EM, JFL, AJ, LF, ARC, DG, AR, MF, LW, PD)",
+		"writer": "Thibault Gilgen",
 		"dev": "César Greppin"
 	},
 	"imgSocial": "social.jpg",

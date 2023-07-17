@@ -4,19 +4,55 @@
 }
 
 h1 {
-  font-family: poppins;
+  font-family: "caprasimo";
 }
 
 h2 {
   font-family: poppins;
 }
 
+.surtitre {
+  font-size: 18px !important;
+  line-height: 20px !important;
+}
+@media (min-width: 768px) {
+  .surtitre {
+    font-size: 28px !important;
+    line-height: 26px !important;
+  }
+}
+
 h3 {
-  font-family: poppins;
+  font-family: "caprasimo";
+  font-size: 40px !important;
+  line-height: 90%;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-family: "caprasimo";
+    font-size: 70px !important;
+    line-height: 90%;
+  }
+}
+
+h4 {
+  font-family: "caprasimo";
+  font-size: 20px !important;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-family: "caprasimo";
+    font-size: 26px !important;
+  }
+}
+
+h5 {
+  font-family: "caprasimo";
 }
 
 .intro p {
   font-family: poppins;
+  color: #ffffff;
 }
 
 .credits p {
@@ -25,7 +61,8 @@ h3 {
 
 p {
   font-family: Poppins;
-  font-weight: 100;
+  font-weight: 300;
+  line-height: 1.625 !important;
 }
 
 blockquote {
@@ -379,15 +416,6 @@ header.headroom--unpinned {
     color: #ffffff;
   }
 }
-#animation_walk {
-  position: absolute;
-  width: 50%;
-  height: auto;
-  left: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 body {
   opacity: 0;
   visibility: hidden;
@@ -407,8 +435,21 @@ body.is-visible {
   margin-bottom: 100vh;
 }
 
-section.section0,
-section.section10 {
+.mb-custom-section {
+  margin-bottom: 80vh;
+}
+
+.border-custom-textbox {
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.bamboule {
+  font-family: "caprasimo";
+}
+
+section.title,
+section.credits {
   height: 100vh;
 }
 
@@ -417,12 +458,29 @@ section.section10 {
 }
 @media (min-width: 768px) {
   .gradient {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(-120deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
   }
 }
 
 .gradient2 {
-  background: rgba(0, 0, 0, 0.75);
+  background: linear-gradient(-45deg, #ee7752, #B10DC9, #13abdb, #23d5ab);
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+  opacity: 0.7;
+}
+
+.swiper-slide {
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.swiper-wrapper {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 }
 
 body {
@@ -442,33 +500,39 @@ html {
   min-height: -webkit-fill-available;
 }
 
-section.section0 .textbox,
+.bg {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+section.section00 .textbox,
 section.section10 .textbox {
   background: transparent;
 }
 
 #swiper-slide-00 {
-  background-position: 75% center;
+  background-position: 73% bottom;
+  background-image: url("../img/this/intro_mobile3.jpg") !important;
 }
 @media (min-width: 768px) {
   #swiper-slide-00 {
-    background-position: center;
+    background-position: left center;
+    background-image: url("../img/this/intro_desktop.jpg") !important;
   }
 }
 
 #swiper-slide-01 {
-  background-color: rgb(131, 131, 131);
-  background-position: 75% center;
+  background-position: 45% center;
+  background-image: url("../img/this/dr_jm_x.jpg") !important;
 }
 @media (min-width: 768px) {
   #swiper-slide-01 {
     background-position: center;
+    background-image: url("../img/this/dr_jm_b.jpg") !important;
   }
 }
 
 #swiper-slide-02 {
-  background-color: rgb(137, 112, 112);
-  background-position: 70% center;
+  background-position: 5% center;
 }
 @media (min-width: 768px) {
   #swiper-slide-02 {
@@ -477,8 +541,7 @@ section.section10 .textbox {
 }
 
 #swiper-slide-03 {
-  background-color: rgb(174, 157, 157);
-  background-position: 60% center;
+  background-position: 25% center;
 }
 @media (min-width: 768px) {
   #swiper-slide-03 {
@@ -487,18 +550,16 @@ section.section10 .textbox {
 }
 
 #swiper-slide-04 {
-  background-color: rgb(148, 102, 102);
-  background-position: 35% center;
+  background-position: 55% center;
 }
 @media (min-width: 768px) {
   #swiper-slide-04 {
-    background-position: center;
+    background-position: left center;
   }
 }
 
 #swiper-slide-05 {
-  background-color: rgb(131, 131, 131);
-  background-position: 63% center;
+  background-position: 80% center;
 }
 @media (min-width: 768px) {
   #swiper-slide-05 {
@@ -507,38 +568,34 @@ section.section10 .textbox {
 }
 
 #swiper-slide-06 {
-  background-color: rgb(96, 96, 96);
-  background-position: 26% center;
+  background-position: left center;
 }
 @media (min-width: 768px) {
   #swiper-slide-06 {
-    background-position: center;
+    background-position: left center;
   }
 }
 
 #swiper-slide-07 {
-  background-color: rgb(49, 45, 45);
-  background-position: 52% center;
+  background-position: left center;
 }
 @media (min-width: 768px) {
   #swiper-slide-07 {
-    background-position: center;
+    background-position: left bottom;
   }
 }
 
 #swiper-slide-08 {
-  background-color: rgb(189, 189, 189);
-  background-position: 85% center;
+  background-position: 60% center;
 }
 @media (min-width: 768px) {
   #swiper-slide-08 {
-    background-position: center;
+    background-position: left top;
   }
 }
 
 #swiper-slide-09 {
-  background-color: rgb(131, 131, 131);
-  background-position: 35% center;
+  background-position: 50% center;
 }
 @media (min-width: 768px) {
   #swiper-slide-09 {
@@ -547,12 +604,137 @@ section.section10 .textbox {
 }
 
 #swiper-slide-10 {
-  background: #202124;
-  background-position: 68% center;
+  background-position: 55% center;
 }
 @media (min-width: 768px) {
   #swiper-slide-10 {
     background-position: center top;
+  }
+}
+
+#swiper-slide-11 {
+  background-position: 60% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-11 {
+    background-position: left top;
+  }
+}
+
+#swiper-slide-12 {
+  background-position: 18% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-12 {
+    background-position: center bottom;
+  }
+}
+
+#swiper-slide-13 {
+  background-position: 8% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-13 {
+    background-position: left bottom;
+  }
+}
+
+#swiper-slide-14 {
+  background-position: 50% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-14 {
+    background-position: center;
+  }
+}
+
+#swiper-slide-15 {
+  background-position: 55% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-15 {
+    background-position: center;
+  }
+}
+
+#swiper-slide-16 {
+  background-position: 68% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-16 {
+    background-position: center;
+  }
+}
+
+#swiper-slide-17 {
+  background-position: 68% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-17 {
+    background-position: center bottom;
+  }
+}
+
+#swiper-slide-18 {
+  background-position: 68% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-18 {
+    background-position: center bottom;
+  }
+}
+
+#swiper-slide-19 {
+  background-position: right center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-19 {
+    background-position: center;
+  }
+}
+
+#swiper-slide-20 {
+  background-position: 68% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-20 {
+    background-position: left top;
+  }
+}
+
+#swiper-slide-21 {
+  background-position: 15% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-21 {
+    background-position: right bottom;
+  }
+}
+
+#swiper-slide-22 {
+  background-position: 25% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-22 {
+    background-position: right center;
+  }
+}
+
+#swiper-slide-23 {
+  background-position: 35% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-23 {
+    background-position: right center;
+  }
+}
+
+#swiper-slide-24 {
+  background-position: 75% center;
+}
+@media (min-width: 768px) {
+  #swiper-slide-24 {
+    background-position: right center;
   }
 }
 

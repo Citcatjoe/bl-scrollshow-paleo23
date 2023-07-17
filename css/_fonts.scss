@@ -1,6 +1,6 @@
 h1
 {
-    font-family: poppins;
+    font-family: 'caprasimo';
     //text-shadow: 0 2px 6px rgba(0, 0, 0, .6) !important;
 }
 
@@ -9,14 +9,51 @@ h2
     font-family: poppins;
 }
 
+.surtitre
+{
+    font-size: 18px !important;
+    line-height: 20px !important;   
+    
+    @include breakpoint(min, medium) {
+        font-size: 28px !important;
+        line-height: 26px !important;  
+    }; 
+}
+
+
 h3 
 {
-    font-family: poppins;
+    font-family: 'caprasimo';
+    font-size: 40px !important;
+    line-height: 90%;
+
+    @include breakpoint(min, medium) {
+        font-family: 'caprasimo';
+        font-size: 70px !important;
+        line-height: 90%;
+    }; 
+}
+
+h4
+{
+    font-family: 'caprasimo';
+    font-size: 20px !important;
+
+    @include breakpoint(min, medium) {
+        font-family: 'caprasimo';
+        font-size: 26px !important;
+    }; 
+}
+
+h5
+{
+    font-family: 'caprasimo';
 }
 
 .intro p
 {
     font-family: poppins;
+    color: #ffffff;
 }
 
 .credits p
@@ -27,8 +64,9 @@ h3
 p
 {
     font-family: Poppins;
-    font-weight: 100;
-    // text-shadow: 0 2px 6px rgba(0, 0, 0, .6) !important;
+    //font-size: 20px ;
+    font-weight: 300;
+    line-height: 1.625 !important;
 }
 
 blockquote
