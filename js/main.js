@@ -152,9 +152,9 @@
             colClasses: 'w-full md:w-1/2 p-0 md:p-6 float-right',
             field1: 'Service merci!',
             field2: 'Noir Désir',
-            field3: '2002 sur la Grande Scène',
+            field3: '2000 sur la Grande Scène',
             field4: '',
-            text: "Avant les déboires de son chanteur Bertrand Cantat, condamné pour le meurtre de Marie Trintignant en 2003, il fut un temps où Noir Désir était au sommet de la scène rock francophone. Le groupe n’est toutefois pas à l’affiche du festival à l'été 2002, c’est The Cranberries qui doit enflammer la Grande Scène. Mais le groupe irlandais annule sa venue deux jours avant."
+            text: "Avant les déboires de son chanteur Bertrand Cantat, condamné pour le meurtre de Marie Trintignant en 2003, il fut un temps où Noir Désir était au sommet de la scène rock francophone. Le groupe n’est toutefois pas à l’affiche du festival à l'été 2000, c’est The Cranberries qui doit enflammer la Grande Scène. Mais le groupe irlandais annule sa venue deux jours avant."
         },
         { 
             bgUrl: 'img/this/noir_desir_2022_c.jpg',
@@ -309,7 +309,9 @@
         direction: 'vertical',
         loop: true,
         effect: "fade",
-        speed: 10,
+        fadeEffect: { crossFade: true },
+        speed: 400,
+        slidesPerView: 1,
       
         // If we need pagination
         // pagination: {

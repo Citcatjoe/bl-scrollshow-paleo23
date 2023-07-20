@@ -470,6 +470,14 @@ section.credits {
 }
 
 .swiper-slide {
+  opacity: 0 !important;
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
+}
+
+.swiper-slide {
   -webkit-transform: translateZ(0);
   -o-transform: translateZ(0);
   -moz-transform: translateZ(0);

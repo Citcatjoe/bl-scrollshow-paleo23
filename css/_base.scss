@@ -89,6 +89,14 @@ section.credits
     // opacity: .75;
 }
 
+.swiper-slide {
+    opacity: 0!important;
+  }
+  
+  .swiper-slide-active {
+    opacity: 1!important;
+  }
+
 // .swiper-slide
 // {
 //     -webkit-backface-visibility: hidden; 
