@@ -35,6 +35,12 @@ h3 {
   }
 }
 
+#onetrust-consent-sdk h3,
+#ot-dpd-title,
+#ot-dpd-title {
+  font-size: inherit !important;
+}
+
 h4 {
   font-family: "caprasimo";
   font-size: 20px !important;
